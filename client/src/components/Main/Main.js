@@ -8,18 +8,18 @@ function Main() {
     return (
         <div>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "5%" }}>
-                <rect width="1200" height="200" style={{fill: "#1eae98"}} />
+                <rect width="1200" height="200" style={{fill: "#ffc947"}} />
             </svg>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "15%", top: "35%" }}>
-                <rect width="1200" height="200" style={{fill: "#a9f1df"}} />
+                <rect width="1200" height="200" style={{fill: "#feddbe"}} />
             </svg>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "65%" }}>
-                <rect width="1200" height="200" style={{fill: "#ffffc7"}} />
+                <rect width="1200" height="200" style={{fill: "#0a1931"}} />
             </svg>
             <div className="main-title">
                 <img src={topo} className="title-image"></img>
                 <Grid container justify="center">
-                    <Grid item xs={6}>
+                    <Grid item xs={12} lg={6}>
                         <div style={{ height: '100vh', position: 'relative' }}>
                             <div className="center-title">
                                 <h1 className="the">The</h1>
@@ -28,7 +28,7 @@ function Main() {
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} lg={6}>
                     <div style={{ height: '100vh', position: 'relative' }}>
                             <div className="center-title">
                                 <h1 className="title-right">
@@ -38,6 +38,7 @@ function Main() {
                                     Cool places is a web app that allows it's users to share 
                                     road-trip tips / suggestions / plans and dreams.
                                 </p>
+                                <h2>/// SEARCH BAR HERE ///////</h2>
                             </div>
                         </div>
                     </Grid>
