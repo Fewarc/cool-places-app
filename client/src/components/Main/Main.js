@@ -8,13 +8,13 @@ function Main() {
     return (
         <div>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "5%" }}>
-                <rect width="1200" height="200" style={{fill: "#ffc947"}} />
+                <rect width="1200" height="200" style={{fill: "#1eae98"}} />
             </svg>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "15%", top: "35%" }}>
-                <rect width="1200" height="200" style={{fill: "#feddbe"}} />
+                <rect width="1200" height="200" style={{fill: "#a9f1df"}} />
             </svg>
             <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "65%" }}>
-                <rect width="1200" height="200" style={{fill: "#0a1931"}} />
+                <rect width="1200" height="200" style={{fill: "#ffffc7"}} />
             </svg>
             <div className="main-title">
                 <img src={topo} className="title-image"></img>
