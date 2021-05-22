@@ -1,6 +1,9 @@
+$mainBlue: #185adb;
+
 .main-title {
     height: 100vh;
-    color: red;
+    width: 100vw;   
+    overflow-x: hidden; 
 }
 
 .title-image {
@@ -15,12 +18,44 @@
     filter: brightness(5%);
 }
 
-.title-grid {
+.center-title {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.the {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    line-height: 10%;
+    color: black;
+    margin-left: 5%;
 }
 
 .title {
     font-family: 'Damion', cursive;
-    font-size: 4rem;
-    color: #185adb;
+    font-size: 15rem;
+    color: $mainBlue;
+    line-height: 10%;
+}
+
+.cool {
+    margin-right: 30%;
+}
+
+.places {
+    margin-left: 10%;
+}
+
+
+//////////////////////////////////////////
+
+.title-right {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
 }
