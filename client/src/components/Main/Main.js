@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import topo from '../../images/contours.png';
 import { Grid } from '@material-ui/core';
 
 import './Main.scss';
 
 function Main() {
+
+    const [offset, setOffset] = useState(0);
+      
+      window.addEventListener("scroll", function(){
+        setOffset(window.pageYOffset / 5);
+        console.log(window.pageYOffset / 5);
+      });
+
     return (
         <div>
-            <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "5%" }}>
+
+            <svg  width="100vw" height="500px" style={{ position: 'absolute', left: `${5 + offset}%`, top: "5%" }}>
                 <rect width="1200" height="200" style={{fill: "#ffc947"}} />
             </svg>
-            <svg width="100vw" height="500px" style={{ position: 'absolute', left: "15%", top: "35%" }}>
+            <svg className="to-right" width="100vw" height="500px" style={{ position: 'absolute', left: `${15 - offset}%`, top: "35%" }}>
                 <rect width="1200" height="200" style={{fill: "#feddbe"}} />
             </svg>
-            <svg width="100vw" height="500px" style={{ position: 'absolute', left: "5%", top: "65%" }}>
+            <svg className="to-left" width="100vw" height="500px" style={{ position: 'absolute', left: `${5 + offset}%`, top: "65%" }}>
                 <rect width="1200" height="200" style={{fill: "#0a1931"}} />
             </svg>
+            
             <div className="main-title">
                 <img src={topo} className="title-image"></img>
                 <Grid container justify="center">
