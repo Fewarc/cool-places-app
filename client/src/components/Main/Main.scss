@@ -115,3 +115,17 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.content-rect {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 200px;
+    background-color: red;
+
+    left: 65%;
+
+    margin-top: 1.5%;
+
+    z-index: -1;
+}

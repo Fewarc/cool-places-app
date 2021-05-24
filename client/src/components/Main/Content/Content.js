@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkedAlt, faListOl, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import { Fade } from 'react-reveal';
 
 import '../Main.scss';
 
@@ -13,6 +14,8 @@ function Content() {
                 <Grid container justify="center" alignContent="stretch">
 
                     <Grid item xs={12}>
+                    <Fade right timeout={1000}><div className="content-rect" style={{ background: '#8ECAE6' }}></div></Fade>
+                    
                         <Grid container spacing={5}>
                             <Grid item xs={8}>  {/** TEXT */}
                                 <h1 className="title-right">SET LOCATIONS!</h1>
@@ -27,6 +30,8 @@ function Content() {
                     </Grid>
 
                     <Grid item xs={12}>
+                    <Fade right timeout={1000} delay={200}><div className="content-rect" style={{ background: '#FFB703' }}></div></Fade>
+
                         <Grid container spacing={5}>
                             <Grid item xs={8}>  {/** TEXT */}
                                 <h1 className="title-right">PLAN YOUR JOURNEYS!</h1>
@@ -41,6 +46,8 @@ function Content() {
                     </Grid>
 
                     <Grid item xs={12}>
+                    <Fade right timeout={1000} delay={400}><div className="content-rect" style={{ background: '#FFC947' }}></div></Fade>
+
                         <Grid container spacing={5}>
                             <Grid item xs={8}>  {/** TEXT */}
                                 <h1 className="title-right">PREPARE CHECK-LISTS!</h1>

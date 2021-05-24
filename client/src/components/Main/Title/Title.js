@@ -16,13 +16,13 @@ function Title() {
         <div>
 
             <svg  width="100vw" height="500px" style={{ position: 'absolute', left: `${5 + offset}%`, top: "5%" }}>
-                <rect width="1200" height="200" style={{fill: "#ffc947"}} />
+                <rect width="1200" height="200" style={{fill: "#8ECAE6"}} />
             </svg>
             <svg className="to-right" width="100vw" height="500px" style={{ position: 'absolute', left: `${15 - offset}%`, top: "35%" }}>
-                <rect width="1200" height="200" style={{fill: "#feddbe"}} />
+                <rect width="1200" height="200" style={{fill: "#FFB703"}} />
             </svg>
             <svg className="to-left" width="100vw" height="500px" style={{ position: 'absolute', left: `${5 + offset}%`, top: "65%" }}>
-                <rect width="1200" height="200" style={{fill: "#0a1931"}} />
+                <rect width="1200" height="200" style={{fill: "#FFC947"}} />
             </svg>
             
             <div className="main-title">
