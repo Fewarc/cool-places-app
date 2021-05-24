@@ -1,9 +1,15 @@
 $mainBlue: #185adb;
+$secondaryYellow: #ffc947;
+$secondaryCream: #feddbe;
+$secondaryDarkBlue: #0a1931;
+
+$allColors: #ffc947, #feddbe, #0a1931;
 
 .main-title {
     height: 100vh;
     width: 100vw;   
     overflow-x: hidden; 
+    margin-bottom: 10%;
 }
 
 .title-image {
@@ -59,4 +65,53 @@ $mainBlue: #185adb;
 
 p {
     font-size: 2rem;
+}
+
+////////////////////////////////////////// NAVBAR
+
+.navbar {
+    background-color: black;
+    color: white;
+
+    margin-top: -10%;
+    margin-bottom: 10%;
+
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+
+    z-index: 1;
+}
+
+.navbar-logo {
+    text-align: left;
+    font-family: 'Damion', cursive;
+    color: $mainBlue;
+    margin-left: 10%; 
+    cursor: pointer;
+}
+
+.navbar-component {
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: inset 0px -7px 0px $mainBlue;
+    }
+}
+
+////////////////////////////////////////// CONTENT
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
