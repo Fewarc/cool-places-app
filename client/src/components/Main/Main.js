@@ -21,7 +21,7 @@ function Main() {
 
             <Content />
 
-            <div style={{ height: '1000px'}}>
+            <div style={{ height: '150px'}}>
 
             </div>
         </div>

@@ -179,7 +179,24 @@ p {
     margin-top: -6%;
 }
 
-.content-svg-image {
-    // position: absolute;
-    // right: 20%;
+.content-svg-image-travel {
+    margin-top: 3.75%;
+}
+
+.or-log {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: $mainBlue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-button {
+    position: absolute;
+    float: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
