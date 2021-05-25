@@ -65,44 +65,91 @@ function Content() {
 
                 <h1 className="popular-title">LATEST MOST<span> POPULAR</span></h1>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}>
-                        <Card variant="outlined" style={{ height: '60vh', textAlign: "left" }}>
-                            <CardMedia 
-                                component="img"
-                                src="https://docs.microsoft.com/pl-pl/azure/azure-maps/media/migrate-google-maps-web-app/google-maps-marker.png"
-                                height="200px"
-                            />
-                            <CardContent>
-                                <h1>title</h1>
-                            </CardContent>
-                            <CardContent>
-                                <p>desc</p>
-                            </CardContent>
-                            <CardHeader
-                                avatar={
-                                <Avatar aria-label="recipe">
-                                    R
-                                </Avatar>
-                                }
-                                title="Shrimp and Chorizo Paella"
-                                subheader="September 14, 2016"
-                            />
-                        </Card>
-                    </Grid>
-                    <Grid item xs={4}>
-                        <Card variant="outlined">
-                            <CardMedia />
-                                xd2
+
+                    <Grid item xs={12} lg={4}>
+                        <Card variant="outlined" style={{ height: '60vh', textAlign: "left" }} >
+                            <div style={{ height: '100%', position: 'relative' }} className="popular-card">
+                                <CardMedia 
+                                    className="media-img"
+                                    component="img"
+                                    src="https://docs.microsoft.com/pl-pl/azure/azure-maps/media/migrate-google-maps-web-app/google-maps-marker.png"
+                                    height="200px"
+                                />
                             
+                                <h1 className="card-title">London local</h1>
+                        
+                                <p className="card-desc">Quick summer trip to take when you think you have no places left to visit in London.</p>
+
+                                <CardHeader
+                                    avatar={
+                                    <Avatar aria-label="recipe">
+                                        R
+                                    </Avatar>
+                                    }
+                                    title="author: Shrimp and Chorizo Paella"
+                                    subheader="added: September 14, 2016"
+                                    style={{ position: 'absolute', bottom: '0'}}
+                                />
+                            </div>
                         </Card>
                     </Grid>
-                    <Grid item xs={4}>
-                        <Card variant="outlined">
-                            <CardMedia />
-                                xd3
+
+                    <Grid item xs={12} lg={4}>
+                        <Card variant="outlined" style={{ height: '60vh', textAlign: "left" }} >
+                            <div style={{ height: '100%', position: 'relative' }} className="popular-card">
+                                <CardMedia 
+                                    className="media-img"
+                                    component="img"
+                                    src="https://docs.microsoft.com/pl-pl/azure/azure-maps/media/migrate-google-maps-web-app/google-maps-marker.png"
+                                    height="200px"
+                                />
                             
+                                <h1 className="card-title">London local 2</h1>
+                        
+                                <p className="card-desc">Quick summer trip to take when you think you have no places left to visit in London.</p>
+
+                                <CardHeader
+                                    avatar={
+                                    <Avatar aria-label="recipe">
+                                        R
+                                    </Avatar>
+                                    }
+                                    title="author: Pizza pepperoni"
+                                    subheader="added: September 1, 2012"
+                                    style={{ position: 'absolute', bottom: '0'}}
+                                />
+                            </div>
                         </Card>
                     </Grid>
+
+                    <Grid item xs={12} lg={4}>
+                        <Card variant="outlined" style={{ height: '60vh', textAlign: "left" }} >
+                            <div style={{ height: '100%', position: 'relative' }} className="popular-card">
+                                <CardMedia 
+                                    className="media-img"
+                                    component="img"
+                                    src="https://docs.microsoft.com/pl-pl/azure/azure-maps/media/migrate-google-maps-web-app/google-maps-marker.png"
+                                    height="200px"
+                                />
+                            
+                                <h1 className="card-title">London local 3</h1>
+                        
+                                <p className="card-desc">Quick summer trip to take when you think you have no places left to visit in London.</p>
+
+                                <CardHeader
+                                    avatar={
+                                    <Avatar aria-label="recipe">
+                                        R
+                                    </Avatar>
+                                    }
+                                    title="author: Giovanni Georgio"
+                                    subheader="added: January 35, 2077"
+                                    style={{ position: 'absolute', bottom: '0'}}
+                                />
+                            </div>
+                        </Card>
+                    </Grid>
+
                 </Grid>
             </Container>
         </div>

@@ -146,5 +146,28 @@ p {
 }
 
 .popular-card {
-    height: 100vh;
+    
+    & .media-img {
+        transition-duration: 1s;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        & .media-img {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.card-title {
+    font-family: 'Bebas Neue', cursive;
+    padding: 16px;
+}
+
+.card-desc {
+    font-size: 1.5rem;
+    padding: 16px;
+
 }
