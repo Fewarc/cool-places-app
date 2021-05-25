@@ -20,10 +20,6 @@ function Main() {
             <Navbar />
 
             <Content />
-
-            <div style={{ height: '150px'}}>
-
-            </div>
         </div>
     )
 }

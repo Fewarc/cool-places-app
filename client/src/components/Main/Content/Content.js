@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Card, Button, CardMedia, CardHeader, Avatar, Container, Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkedAlt, faListOl, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
-import { Fade } from 'react-reveal';
+import { faMapMarkedAlt, faListOl, faCheckSquare} from '@fortawesome/free-solid-svg-icons';
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { Fade } from 'react-reveal'; 
 
 import '../Main.scss';
 
@@ -182,7 +183,21 @@ function Content() {
                         </div>
                     </Grid>
                 </Grid>
-                
+
+                <div className="rotate-rect">
+                    <Grid container justify="center">
+                        <Grid item xs={10}>
+                            <FontAwesomeIcon className="social-icon" icon={faTwitterSquare} size="4x"/>
+                            <FontAwesomeIcon className="social-icon" icon={faTwitterSquare} size="4x"/>
+                            <FontAwesomeIcon className="social-icon" icon={faTwitterSquare} size="4x"/>
+                        </Grid>
+                        <Grid item xs={2}>
+                            cool places
+                        </Grid>
+                    </Grid>
+                </div>
+                <div style={{ height: '150px' }}></div>
+
             </Container>
         </div>
     )

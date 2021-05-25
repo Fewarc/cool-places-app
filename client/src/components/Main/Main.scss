@@ -1,9 +1,7 @@
 $mainBlue: #185adb;
-$secondaryYellow: #ffc947;
-$secondaryCream: #feddbe;
-$secondaryDarkBlue: #0a1931;
-
-$allColors: #ffc947, #feddbe, #0a1931;
+$secondaryBlue: #8ECAE6;
+$secondaryOrange: #FFB703;
+$secondaryYellow: #FFC947;
 
 .main-title {
     height: 100vh;
@@ -55,6 +53,9 @@ $allColors: #ffc947, #feddbe, #0a1931;
     margin-left: 10%;
 }
 
+.first-container {
+    position: relative;
+}
 
 //////////////////////////////////////////
 
@@ -199,4 +200,18 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+//////////////////////////////////////////
+
+.rotate-rect {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.social-icon {
+    cursor: pointer;
 }
