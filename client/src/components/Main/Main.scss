@@ -152,7 +152,7 @@ p {
     }
 
     &:hover {
-        cursor: pointer;
+        // cursor: pointer;
 
         & .media-img {
             transform: scale(1.1);
@@ -170,4 +170,16 @@ p {
     font-size: 1.5rem;
     padding: 16px;
 
+}
+
+.start-planning {
+    font-family: 'Damion', cursive;
+    font-size: 3rem;
+    color: $mainBlue;
+    margin-top: -6%;
+}
+
+.content-svg-image {
+    // position: absolute;
+    // right: 20%;
 }
