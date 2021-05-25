@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Grid } from '@material-ui/core';
+import { Card, CardContent, CardMedia, CardHeader, Avatar, Container, Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkedAlt, faListOl, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { Fade } from 'react-reveal';
@@ -30,7 +30,7 @@ function Content() {
                     </Grid>
 
                     <Grid item xs={12}>
-                    <Fade right timeout={1000} delay={200}><div className="content-rect" style={{ background: '#FFB703' }}></div></Fade>
+                    <Fade right timeout={1000} delay={100}><div className="content-rect" style={{ background: '#FFB703' }}></div></Fade>
 
                         <Grid container spacing={5}>
                             <Grid item xs={8}>  {/** TEXT */}
@@ -46,7 +46,7 @@ function Content() {
                     </Grid>
 
                     <Grid item xs={12}>
-                    <Fade right timeout={1000} delay={400}><div className="content-rect" style={{ background: '#FFC947' }}></div></Fade>
+                    <Fade right timeout={1000} delay={200}><div className="content-rect" style={{ background: '#FFC947' }}></div></Fade>
 
                         <Grid container spacing={5}>
                             <Grid item xs={8}>  {/** TEXT */}
@@ -61,6 +61,48 @@ function Content() {
                         </Grid>
                     </Grid>
 
+                </Grid>
+
+                <h1 className="popular-title">LATEST MOST<span> POPULAR</span></h1>
+                <Grid container spacing={2}>
+                    <Grid item xs={4}>
+                        <Card variant="outlined" style={{ height: '60vh', textAlign: "left" }}>
+                            <CardMedia 
+                                component="img"
+                                src="https://docs.microsoft.com/pl-pl/azure/azure-maps/media/migrate-google-maps-web-app/google-maps-marker.png"
+                                height="200px"
+                            />
+                            <CardContent>
+                                <h1>title</h1>
+                            </CardContent>
+                            <CardContent>
+                                <p>desc</p>
+                            </CardContent>
+                            <CardHeader
+                                avatar={
+                                <Avatar aria-label="recipe">
+                                    R
+                                </Avatar>
+                                }
+                                title="Shrimp and Chorizo Paella"
+                                subheader="September 14, 2016"
+                            />
+                        </Card>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Card variant="outlined">
+                            <CardMedia />
+                                xd2
+                            
+                        </Card>
+                    </Grid>
+                    <Grid item xs={4}>
+                        <Card variant="outlined">
+                            <CardMedia />
+                                xd3
+                            
+                        </Card>
+                    </Grid>
                 </Grid>
             </Container>
         </div>

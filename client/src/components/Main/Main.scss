@@ -129,3 +129,22 @@ p {
 
     z-index: -1;
 }
+
+////////////////////////////////////////
+
+.popular-title {
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+
+    margin-top: 15%;
+
+    & span {
+        color: $mainBlue;
+    }
+
+}
+
+.popular-card {
+    height: 100vh;
+}
